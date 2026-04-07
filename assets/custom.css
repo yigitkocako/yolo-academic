@@ -1,0 +1,58 @@
+/* Custom overrides — keep small and stable */
+
+/* 1) Make navbar consistent and prevent lang toggle dropping */
+.nav.nav-solid .nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.nav.nav-solid .nav-right{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:12px;
+  flex-wrap:nowrap;
+  min-width: 0;
+}
+.nav.nav-solid .tabs{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;           /* wraps on small screens */
+  justify-content:flex-end;
+  min-width: 0;
+}
+/* keep the language button from going to a new line */
+#langToggle{
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+/* 2) TR/EN label toggles (for navbar labels without i18n keys) */
+.lang-tr{ display:inline; }
+.lang-en{ display:none; }
+html[lang="en"] .lang-tr{ display:none; }
+html[lang="en"] .lang-en{ display:inline; }
+
+/* 3) Kill Results debug banner everywhere */
+#dataBanner{ display:none !important; }
+
+/* 4) Results layout: force 2-column grid instead of horizontal overflow */
+#uniResults{
+  display:grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap:14px !important;
+}
+@media (max-width: 980px){
+  #uniResults{ grid-template-columns: 1fr !important; }
+}
+
+#countryResults{
+  display:grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap:14px !important;
+}
+@media (max-width: 980px){
+  #countryResults{ grid-template-columns: 1fr !important; }
+}

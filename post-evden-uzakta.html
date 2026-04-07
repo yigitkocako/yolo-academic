@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Evden Uzakta • YOLO Academic</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="site">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="YOLO Academic home">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">YOLO Academic</span>
+          <span class="brand-sub">Academic Consultancy</span>
+        </span>
+      </a>
+
+      <div class="nav-right row wrap">
+        <div class="tabs">
+          <a class="tab" href="index.html" data-i18n="nav.home"></a>
+          <a class="tab" href="finder.html" data-i18n="nav.finder"></a>
+          <a class="tab" href="results.html" data-i18n="nav.results"></a>
+          <a class="tab active" href="insights.html" data-i18n="nav.insights"></a>
+          <a class="tab" href="sources.html" data-i18n="nav.about"></a>
+        </div>
+        <button id="langToggle" class="lang-toggle" type="button" aria-label="Change language">EN</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="container" style="padding-top:34px;">
+    <a class="muted small" href="insights.html">← <span class="lang-tr">Yazılara dön</span><span class="lang-en">Back to Insights</span></a>
+    <h1 class="page-title" style="margin-top:10px;">
+      <span class="lang-tr">Evden uzakta: Yurtdışına giden öğrenciler için psikolojik dayanıklılık</span>
+      <span class="lang-en">Away from home: Psychological resilience for students abroad</span>
+    </h1>
+    <p class="muted page-sub">
+      <span class="lang-tr">Misafir yazar: (Klinik Psikolog) — metni ekleyince burayı güncelleriz.</span>
+      <span class="lang-en">Guest author: (Clinical Psychologist) — we’ll update once you add the text.</span>
+    </p>
+  </header>
+
+  <main class="container" style="padding-bottom:60px;">
+    <article class="card prose">
+      <div class="lang-tr">
+        <p><em>Bu sayfa hazır: annenin yazısını buraya yapıştıracağız.</em></p>
+        <h2>Giriş</h2>
+        <p>[Buraya yazının giriş paragrafı]</p>
+
+        <h2>Neler normal?</h2>
+        <ul>
+          <li>[Örnek madde]</li>
+          <li>[Örnek madde]</li>
+        </ul>
+
+        <h2>Pratik öneriler</h2>
+        <p>[Buraya öneriler]</p>
+
+        <h2>Ne zaman destek almak gerekir?</h2>
+        <p>[Buraya destek bölümü]</p>
+      </div>
+
+      <div class="lang-en">
+        <p><em>This page is ready. Paste the English version here (optional) — or we can translate later.</em></p>
+        <h2>Intro</h2>
+        <p>[Paste / translate content here]</p>
+      </div>
+    </article>
+
+    <section class="card" style="margin-top:14px;">
+      <div class="page-head">
+        <div>
+          <h2 data-i18n="cta.title"></h2>
+          <p class="muted" data-i18n="cta.p"></p>
+        </div>
+        <div class="row wrap">
+          <a class="btn primary" href="finder.html" data-i18n="landing.cta.start"></a>
+          <a class="btn" data-calendly href="#" data-i18n="call.btn"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/i18n.js"></script>
+  <script src="assets/config.js"></script>
+  <script src="assets/calendly.js"></script>
+</body>
+</html>

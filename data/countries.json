@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ie",
+    "name": "İrlanda",
+    "living_cost_band": "high",
+    "student_work_allowed": true,
+    "post_study_work": true,
+    "short_note": "Genelde teknoloji/finans ekosistemi güçlü; yaşam maliyeti bazı şehirlerde yüksek.",
+    "official_links": [
+      {
+        "title": "Immigration / Student Permissions",
+        "url": "https://example.com/ie-immigration"
+      },
+      {
+        "title": "Education in Ireland",
+        "url": "https://example.com/ie-education"
+      }
+    ],
+    "last_verified": "2026-03-05"
+  },
+  {
+    "id": "ca",
+    "name": "Kanada",
+    "living_cost_band": "med-high",
+    "student_work_allowed": true,
+    "post_study_work": true,
+    "short_note": "Çalışma/yerleşim yolları net olabilir; bazı eyalet/şehirlerde maliyet yükselir.",
+    "official_links": [
+      {
+        "title": "IRCC Students",
+        "url": "https://example.com/ca-ircc"
+      },
+      {
+        "title": "Study in Canada",
+        "url": "https://example.com/ca-study"
+      }
+    ],
+    "last_verified": "2026-03-05"
+  },
+  {
+    "id": "uk",
+    "name": "İngiltere",
+    "living_cost_band": "high",
+    "student_work_allowed": true,
+    "post_study_work": true,
+    "short_note": "Prestijli okullar çok; ücret ve yaşam maliyeti şehir bazında değişken.",
+    "official_links": [
+      {
+        "title": "UK Visas and Immigration",
+        "url": "https://example.com/uk-ukvi"
+      },
+      {
+        "title": "Study UK",
+        "url": "https://example.com/uk-study"
+      }
+    ],
+    "last_verified": "2026-03-05"
+  }
+]

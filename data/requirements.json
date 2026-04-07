@@ -1,0 +1,65 @@
+[
+  {
+    "country_id": "ie",
+    "visa_checklist": [
+      "Pasaport",
+      "Finansal kanıt",
+      "Kabul mektubu",
+      "Sağlık sigortası"
+    ],
+    "common_admission_docs": [
+      "Transkript",
+      "Diploma",
+      "CV (PG için)",
+      "Niyet mektubu",
+      "Referans (opsiyonel)"
+    ],
+    "language_tests": [
+      "IELTS",
+      "TOEFL"
+    ],
+    "last_verified": "2026-03-05"
+  },
+  {
+    "country_id": "ca",
+    "visa_checklist": [
+      "Pasaport",
+      "Kabul mektubu",
+      "Finansal kanıt",
+      "Biometrics (gerektiğinde)"
+    ],
+    "common_admission_docs": [
+      "Transkript",
+      "Diploma",
+      "CV",
+      "Niyet mektubu",
+      "Referans (opsiyonel)"
+    ],
+    "language_tests": [
+      "IELTS",
+      "TOEFL"
+    ],
+    "last_verified": "2026-03-05"
+  },
+  {
+    "country_id": "uk",
+    "visa_checklist": [
+      "Pasaport",
+      "CAS",
+      "Finansal kanıt",
+      "ATAS (bazı bölümler)"
+    ],
+    "common_admission_docs": [
+      "Transkript",
+      "Diploma",
+      "CV",
+      "Niyet mektubu",
+      "Referans (sık)"
+    ],
+    "language_tests": [
+      "IELTS",
+      "TOEFL"
+    ],
+    "last_verified": "2026-03-05"
+  }
+]
