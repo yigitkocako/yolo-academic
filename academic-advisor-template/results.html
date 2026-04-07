@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sonuçlar • YOLO Academic</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/custom.css" />
+</head>
+<body class="site">
+  <nav class="nav nav-solid">
+    <div class="nav-inner">
+      <a class="brand brand-strong" href="index.html" aria-label="YOLO Academic home">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">YOLO Academic</span>
+          <span class="brand-sub">Academic Consultancy</span>
+        </span>
+      </a>
+
+      <div class="nav-right">
+        <div class="tabs tabs-strong">
+          <a class="tab" href="index.html"><span class="lang-tr">Ana Sayfa</span><span class="lang-en">Home</span></a>
+          <a class="tab" href="finder.html"><span class="lang-tr">Program Bul</span><span class="lang-en">Find</span></a>
+          <a class="tab active" href="results.html"><span class="lang-tr">Sonuçlar</span><span class="lang-en">Results</span></a>
+          <a class="tab" href="insights.html"><span class="lang-tr">Yazılar</span><span class="lang-en">Insights</span></a>
+          <a class="tab" href="sources.html"><span class="lang-tr">Hakkında</span><span class="lang-en">About</span></a>
+        </div>
+        <button id="langToggle" class="lang-toggle" type="button" aria-label="Change language">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container" style="padding-top:34px;">
+    <div class="row wrap" style="align-items:flex-end; justify-content:space-between;">
+      <div>
+        <h1 data-i18n="results.h1">Öneriler</h1>
+        <p id="summary" class="muted"></p>
+      </div>
+      <div class="row wrap">
+        <a class="btn" href="finder.html" data-i18n="results.edit">Filtreleri değiştir</a>
+        <a class="btn ghost" data-calendly href="#"><span class="lang-tr">Ücretsiz ön görüşme</span><span class="lang-en">Free intro call</span></a>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:12px;">
+      <div class="row wrap" style="align-items:flex-end; justify-content:space-between;">
+        <div>
+          <div class="muted small" data-i18n="sort.label">Sıralama</div>
+          <select id="sortSelect" aria-label="Sort">
+            <option value="match" data-i18n="sort.match">En iyi eşleşme</option>
+            <option value="cheapest" data-i18n="sort.cheapest">En düşük maliyet</option>
+            <option value="ranking" data-i18n="sort.ranking">En yüksek ranking</option>
+          </select>
+        </div>
+        <div class="muted small" data-i18n="sort.note">Not: Ülke skorları ‘en iyi eşleşme’ mantığıyla hesaplanır.</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-bottom:60px;">
+    <section class="card">
+      <h2 data-i18n="results.countries">Önerilen Ülkeler</h2>
+      <div id="countryResults" class="grid"></div>
+    </section>
+
+    <section class="card" style="margin-top:14px;">
+      <h2 data-i18n="results.unis">Önerilen Okullar</h2>
+      <div id="uniResults" class="grid"></div>
+      <p class="muted small" style="margin-top:12px;" data-i18n="results.note">Not: Eksik/uyumsuz bilgilerde ‘Pathway gerekebilir’ etiketi görebilirsin.</p>
+    </section>
+
+    <section class="card call-cta" style="margin-top:14px;">
+      <div class="call-row">
+        <div>
+          <h2 data-i18n="call.cta.title">Karar vermekte zorlandın mı?</h2>
+          <p class="muted" data-i18n="call.cta.p">Kısa bir ön görüşmede hedefini netleştirip listeni birlikte yorumlayabiliriz.</p>
+        </div>
+        <div class="row wrap">
+          <a class="btn primary" href="finder.html" data-i18n="results.edit">Filtreleri değiştir</a>
+          <a class="btn ghost" data-calendly href="#"><span class="lang-tr">Ücretsiz ön görüşme</span><span class="lang-en">Free intro call</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/i18n.js"></script>
+  <script src="assets/config.js"></script>
+  <script src="assets/calendly.js"></script>
+  <script src="assets/results.js"></script>
+</body>
+</html>

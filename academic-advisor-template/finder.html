@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Program Bul • YOLO Academic</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/custom.css" />
+</head>
+<body class="site">
+  <nav class="nav nav-solid">
+    <div class="nav-inner">
+      <a class="brand brand-strong" href="index.html" aria-label="YOLO Academic home">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">YOLO Academic</span>
+          <span class="brand-sub">Academic Consultancy</span>
+        </span>
+      </a>
+
+      <div class="nav-right">
+        <div class="tabs tabs-strong">
+          <a class="tab" href="index.html"><span class="lang-tr">Ana Sayfa</span><span class="lang-en">Home</span></a>
+          <a class="tab active" href="finder.html"><span class="lang-tr">Program Bul</span><span class="lang-en">Find</span></a>
+          <a class="tab" href="results.html"><span class="lang-tr">Sonuçlar</span><span class="lang-en">Results</span></a>
+          <a class="tab" href="insights.html"><span class="lang-tr">Yazılar</span><span class="lang-en">Insights</span></a>
+          <a class="tab" href="sources.html"><span class="lang-tr">Hakkında</span><span class="lang-en">About</span></a>
+        </div>
+        <button id="langToggle" class="lang-toggle" type="button" aria-label="Change language">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container" style="padding-top:34px;">
+    <h1 data-i18n="finder.h1">Tercihlerini seç</h1>
+    <p class="muted" data-i18n="finder.p">Filtreleri seç → sonuçlarda ülke ve okul önerilerini gör.</p>
+  </header>
+
+  <main class="container" style="padding-bottom:60px;">
+    <form id="prefsForm" class="card form">
+      <div class="grid">
+
+        <div class="field">
+          <label for="country" data-i18n="form.country">Ülke (opsiyonel)</label>
+          <select id="country">
+            <option value="any" data-i18n="opt.any">Farketmez</option>
+            <option value="ie" data-i18n="opt.country.ie">İrlanda</option>
+            <option value="ca" data-i18n="opt.country.ca">Kanada</option>
+            <option value="uk" data-i18n="opt.country.uk">İngiltere</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="degree" data-i18n="form.degree">Eğitim seviyesi (opsiyonel)</label>
+          <select id="degree">
+            <option value="any" data-i18n="opt.any">Farketmez</option>
+            <option value="ug" data-i18n="opt.ug">Lisans (UG)</option>
+            <option value="pg" data-i18n="opt.pg">Yüksek Lisans (PG)</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="field" data-i18n="form.field">Alan (opsiyonel)</label>
+          <select id="field">
+            <option value="any" data-i18n="opt.any">Farketmez</option>
+            <option value="computing" data-i18n="opt.computing">Computing / Data / AI</option>
+            <option value="business" data-i18n="opt.business">Business / Management</option>
+            <option value="engineering" data-i18n="opt.engineering">Engineering</option>
+            <option value="health" data-i18n="opt.health">Health</option>
+            <option value="arts" data-i18n="opt.arts">Arts / Humanities</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="goal" data-i18n="form.goal">Hedef</label>
+          <select id="goal" required>
+            <option value="balanced" data-i18n="opt.balanced">Dengeli</option>
+            <option value="prestige" data-i18n="opt.prestige">Prestij / Ranking</option>
+            <option value="value" data-i18n="opt.value">Fiyat / Performans</option>
+            <option value="career" data-i18n="opt.career">Kariyer & Çalışma İzni</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="tuitionMax" data-i18n="form.tuition">Yıllık okul bütçesi (en fazla) (EUR)</label>
+          <select id="tuitionMax">
+            <option value="" data-i18n="opt.any">Farketmez</option>
+            <option value="10000">≤ 10k</option>
+            <option value="20000">≤ 20k</option>
+            <option value="35000">≤ 35k</option>
+            <option value="999999">35k+ (limit yok)</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="livingMax" data-i18n="form.living">Aylık yaşam bütçesi (en fazla) (EUR)</label>
+          <select id="livingMax">
+            <option value="" data-i18n="opt.any">Farketmez</option>
+            <option value="800">≤ 800</option>
+            <option value="1200">≤ 1200</option>
+            <option value="1800">≤ 1800</option>
+            <option value="999999">1800+ (limit yok)</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="postStudyRequired" data-i18n="form.poststudy">Mezuniyet sonrası çalışma izni şart mı? (opsiyonel)</label>
+          <select id="postStudyRequired">
+            <option value="any" data-i18n="opt.any">Farketmez</option>
+            <option value="yes" data-i18n="opt.yes">Evet</option>
+            <option value="no" data-i18n="opt.no">Hayır</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="hasIelts" data-i18n="form.ielts">IELTS durumu (opsiyonel)</label>
+          <select id="hasIelts">
+            <option value="any" data-i18n="opt.ielts.any">Henüz bilmiyorum / farketmez</option>
+            <option value="yes" data-i18n="opt.ielts.yes">Var</option>
+            <option value="no" data-i18n="opt.ielts.no">Yok</option>
+          </select>
+        </div>
+
+        <div class="field" id="ieltsWrap" style="display:none;">
+          <label for="ieltsScore" data-i18n="form.ieltsScore">IELTS skoru (overall)</label>
+          <select id="ieltsScore">
+            <option value="" data-i18n="opt.any">Farketmez</option>
+            <option value="5.5">5.5</option>
+            <option value="6.0">6.0</option>
+            <option value="6.5">6.5</option>
+            <option value="7.0">7.0</option>
+            <option value="7.5">7.5</option>
+            <option value="8.0">8.0</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="gpa" data-i18n="form.gpa">GPA (opsiyonel)</label>
+          <input id="gpa" type="text" inputmode="decimal" placeholder="örn. 3.10" />
+          <div class="hint muted small" data-i18n="form.gpaHint">Şimdilik 0–4 formatı.</div>
+        </div>
+
+        <div class="field">
+          <label for="intake" data-i18n="form.intake">Başlangıç dönemi (intake) (opsiyonel)</label>
+          <select id="intake">
+            <option value="any" data-i18n="opt.any">Farketmez</option>
+            <option value="sep" data-i18n="opt.sep">Sep/Autumn</option>
+            <option value="jan" data-i18n="opt.jan">Jan/Spring</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="year" data-i18n="form.year">Başlangıç yılı (opsiyonel)</label>
+          <select id="year">
+            <option value="any" data-i18n="opt.year.any">Yıl farketmez</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="actions row wrap">
+        <button class="btn primary" type="submit" data-i18n="form.submit">Sonuçları gör</button>
+        <a class="btn ghost" data-calendly href="#"><span class="lang-tr">Ücretsiz ön görüşme</span><span class="lang-en">Free intro call</span></a>
+      </div>
+    </form>
+  </main>
+
+  <script src="assets/i18n.js"></script>
+  <script src="assets/config.js"></script>
+  <script src="assets/calendly.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

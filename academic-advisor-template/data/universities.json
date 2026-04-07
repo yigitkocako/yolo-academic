@@ -1,0 +1,208 @@
+[
+  {
+    "id": "tcd",
+    "country_id": "ie",
+    "name": "Trinity College Dublin",
+    "city": "Dublin",
+    "qs_band": "top100",
+    "degree_supported": [
+      "ug",
+      "pg"
+    ],
+    "fields": [
+      "computing",
+      "business",
+      "engineering",
+      "arts"
+    ],
+    "intakes": [
+      "sep"
+    ],
+    "tuition_est_ug_eur": 22000,
+    "tuition_est_pg_eur": 25000,
+    "living_est_month_eur": 1600,
+    "ielts_min_ug": 6.5,
+    "ielts_min_pg": 6.5,
+    "gpa_min": 3.0,
+    "career_boost": true,
+    "links": {
+      "admissions": "https://example.com/tcd/admissions",
+      "tuition": "https://example.com/tcd/tuition",
+      "international": "https://example.com/tcd/international"
+    },
+    "last_verified": "2026-03-05"
+  },
+  {
+    "id": "ucd",
+    "country_id": "ie",
+    "name": "University College Dublin",
+    "city": "Dublin",
+    "qs_band": "top200",
+    "degree_supported": [
+      "ug",
+      "pg"
+    ],
+    "fields": [
+      "computing",
+      "business",
+      "engineering",
+      "health"
+    ],
+    "intakes": [
+      "sep",
+      "jan"
+    ],
+    "tuition_est_ug_eur": 19000,
+    "tuition_est_pg_eur": 23000,
+    "living_est_month_eur": 1550,
+    "ielts_min_ug": 6.5,
+    "ielts_min_pg": 6.5,
+    "gpa_min": 2.8,
+    "career_boost": true,
+    "links": {
+      "admissions": "https://example.com/ucd/admissions",
+      "tuition": "https://example.com/ucd/tuition",
+      "international": "https://example.com/ucd/international"
+    },
+    "last_verified": "2026-03-05"
+  },
+  {
+    "id": "utoronto",
+    "country_id": "ca",
+    "name": "University of Toronto",
+    "city": "Toronto",
+    "qs_band": "top50",
+    "degree_supported": [
+      "ug",
+      "pg"
+    ],
+    "fields": [
+      "computing",
+      "business",
+      "engineering",
+      "health",
+      "arts"
+    ],
+    "intakes": [
+      "sep",
+      "jan"
+    ],
+    "tuition_est_ug_eur": 42000,
+    "tuition_est_pg_eur": 35000,
+    "living_est_month_eur": 1750,
+    "ielts_min_ug": 6.5,
+    "ielts_min_pg": 7.0,
+    "gpa_min": 3.2,
+    "career_boost": true,
+    "links": {
+      "admissions": "https://example.com/utoronto/admissions",
+      "tuition": "https://example.com/utoronto/tuition",
+      "international": "https://example.com/utoronto/international"
+    },
+    "last_verified": "2026-03-05"
+  },
+  {
+    "id": "ubc",
+    "country_id": "ca",
+    "name": "University of British Columbia",
+    "city": "Vancouver",
+    "qs_band": "top100",
+    "degree_supported": [
+      "ug",
+      "pg"
+    ],
+    "fields": [
+      "computing",
+      "business",
+      "engineering",
+      "health",
+      "arts"
+    ],
+    "intakes": [
+      "sep",
+      "jan"
+    ],
+    "tuition_est_ug_eur": 38000,
+    "tuition_est_pg_eur": 32000,
+    "living_est_month_eur": 1900,
+    "ielts_min_ug": 6.5,
+    "ielts_min_pg": 6.5,
+    "gpa_min": 3.0,
+    "career_boost": true,
+    "links": {
+      "admissions": "https://example.com/ubc/admissions",
+      "tuition": "https://example.com/ubc/tuition",
+      "international": "https://example.com/ubc/international"
+    },
+    "last_verified": "2026-03-05"
+  },
+  {
+    "id": "manchester",
+    "country_id": "uk",
+    "name": "University of Manchester",
+    "city": "Manchester",
+    "qs_band": "top100",
+    "degree_supported": [
+      "ug",
+      "pg"
+    ],
+    "fields": [
+      "computing",
+      "business",
+      "engineering",
+      "health",
+      "arts"
+    ],
+    "intakes": [
+      "sep",
+      "jan"
+    ],
+    "tuition_est_ug_eur": 30000,
+    "tuition_est_pg_eur": 29000,
+    "living_est_month_eur": 1350,
+    "ielts_min_ug": 6.5,
+    "ielts_min_pg": 6.5,
+    "gpa_min": 2.9,
+    "career_boost": true,
+    "links": {
+      "admissions": "https://example.com/manchester/admissions",
+      "tuition": "https://example.com/manchester/tuition",
+      "international": "https://example.com/manchester/international"
+    },
+    "last_verified": "2026-03-05"
+  },
+  {
+    "id": "edinburgh",
+    "country_id": "uk",
+    "name": "University of Edinburgh",
+    "city": "Edinburgh",
+    "qs_band": "top100",
+    "degree_supported": [
+      "ug",
+      "pg"
+    ],
+    "fields": [
+      "computing",
+      "business",
+      "engineering",
+      "health",
+      "arts"
+    ],
+    "intakes": [
+      "sep"
+    ],
+    "tuition_est_ug_eur": 33000,
+    "tuition_est_pg_eur": 32000,
+    "living_est_month_eur": 1500,
+    "ielts_min_ug": 6.5,
+    "ielts_min_pg": 6.5,
+    "gpa_min": 3.0,
+    "career_boost": true,
+    "links": {
+      "admissions": "https://example.com/edinburgh/admissions",
+      "tuition": "https://example.com/edinburgh/tuition",
+      "international": "https://example.com/edinburgh/international"
+    },
+    "last_verified": "2026-03-05"
+  }
+]
