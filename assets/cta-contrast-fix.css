@@ -1,0 +1,90 @@
+/* YOLO Academic — CTA contrast fix (home + results)
+   Keeps hero ghost buttons white, but makes CTA band buttons/icons readable on light backgrounds.
+   Safe: only affects CTA sections + global ghost defaults.
+*/
+
+/* Default ghost button for light surfaces */
+.btn.ghost{
+  background: rgba(37, 99, 235, 0.10);
+  border-color: rgba(37, 99, 235, 0.22);
+  color: #0f172a;
+}
+.btn.ghost:hover{
+  background: rgba(37, 99, 235, 0.14);
+}
+
+/* Keep ghost button readable on HERO (dark image) */
+.hero .btn.ghost,
+.hero-content .btn.ghost{
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.22);
+  color: #fff;
+}
+.hero .btn.ghost:hover,
+.hero-content .btn.ghost:hover{
+  background: rgba(255,255,255,0.18);
+}
+
+/* CTA band (light blue section): force contrast */
+.cta-band .btn.ghost,
+.cta .btn.ghost,
+.card-cta .btn.ghost{
+  background: rgba(255,255,255,0.70);
+  border-color: rgba(15, 23, 42, 0.14);
+  color: #0f172a !important;
+}
+.cta-band .btn.ghost:hover,
+.cta .btn.ghost:hover,
+.card-cta .btn.ghost:hover{
+  background: rgba(255,255,255,0.84);
+}
+
+/* CTA headings + text */
+.cta-band h2,
+.cta h2{
+  color: #0f172a;
+}
+.cta-band .muted,
+.cta .muted,
+.cta-band p,
+.cta p{
+  color: #334155;
+}
+
+/* Social buttons inside CTA band */
+.cta-band .socials a,
+.cta .socials a,
+.cta-band .social a,
+.cta .social a{
+  opacity: 1;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(15, 23, 42, 0.16);
+  color: #0f172a;
+}
+.cta-band .socials a:hover,
+.cta .socials a:hover,
+.cta-band .social a:hover,
+.cta .social a:hover{
+  background: rgba(255,255,255,0.86);
+  border-color: rgba(15, 23, 42, 0.22);
+}
+.cta-band .socials a svg,
+.cta .socials a svg,
+.cta-band .social a svg,
+.cta .social a svg{
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+/* If social icons are images, slightly increase contrast */
+.cta-band .socials a img,
+.cta .socials a img{
+  filter: contrast(1.2);
+}
+
+/* Prevent accidental "disabled-looking" ghost button in CTA */
+.cta-band .btn.ghost[disabled],
+.cta .btn.ghost[disabled],
+.card-cta .btn.ghost[disabled]{
+  opacity: 0.65;
+}

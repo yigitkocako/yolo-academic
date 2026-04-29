@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/cta-contrast-fix.css?v=1">
 </head>
 <body class="site">
   <nav class="nav">
@@ -30,7 +31,6 @@
           <a class="tab" href="insights.html" data-i18n="nav.insights"></a>
           <a class="tab" href="sources.html" data-i18n="nav.about"></a>
         </div>
-		<button id="menuToggle" class="menu-toggle" type="button">☰</button>
         <button id="langToggle" class="lang-toggle" type="button" aria-label="Change language">EN</button>
       </div>
     </div>
@@ -43,6 +43,9 @@
       <div class="hero-slide is-active" style="background-image:url('assets/hero-1.jpg')"></div>
       <div class="hero-slide" style="background-image:url('assets/hero-2.jpg')"></div>
       <div class="hero-slide" style="background-image:url('assets/hero-3.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/hero-4.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/hero-5.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/hero-6.jpg')"></div>
     </div>
 
     <div class="hero-grad" aria-hidden="true"></div>
@@ -68,33 +71,69 @@
   </header>
 
   <main>
-    <section class="section section-light">
+    
+    <section class="section section-light services-section">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head services-head">
           <h2 data-i18n="services.title"></h2>
           <p class="muted" data-i18n="services.sub"></p>
         </div>
 
-        <div class="cards-4">
-          <div class="card soft">
-            <h3 data-i18n="svc.1.t"></h3>
-            <p class="muted small" data-i18n="svc.1.p"></p>
+        <div class="services-slider" data-svc-slider>
+          <button class="svc-nav prev" type="button" aria-label="Previous service" data-svc-prev>‹</button>
+
+          <div class="svc-viewport" data-svc-viewport>
+            <div class="svc-track" data-svc-track>
+              <div class="card soft svc-card">
+                <h3 data-i18n="svc.1.t"></h3>
+                <p class="muted small" data-i18n="svc.1.p"></p>
+              </div>
+              <div class="card soft svc-card">
+                <h3 data-i18n="svc.2.t"></h3>
+                <p class="muted small" data-i18n="svc.2.p"></p>
+              </div>
+              <div class="card soft svc-card">
+                <h3 data-i18n="svc.3.t"></h3>
+                <p class="muted small" data-i18n="svc.3.p"></p>
+              </div>
+              <div class="card soft svc-card">
+                <h3 data-i18n="svc.9.t"></h3>
+                <p class="muted small" data-i18n="svc.9.p"></p>
+              </div>
+              <div class="card soft svc-card">
+                <h3 data-i18n="svc.7.t"></h3>
+                <p class="muted small" data-i18n="svc.7.p"></p>
+              </div>
+              <div class="card soft svc-card">
+                <h3 data-i18n="svc.8.t"></h3>
+                <p class="muted small" data-i18n="svc.8.p"></p>
+              </div>
+              <div class="card soft svc-card">
+                <h3 data-i18n="svc.5.t"></h3>
+                <p class="muted small" data-i18n="svc.5.p"></p>
+              </div>
+              <div class="card soft svc-card">
+                <h3 data-i18n="svc.6.t"></h3>
+                <p class="muted small" data-i18n="svc.6.p"></p>
+              </div>
+              <div class="card soft svc-card">
+                <h3 data-i18n="svc.4.t"></h3>
+                <p class="muted small" data-i18n="svc.4.p"></p>
+              </div>
+              <div class="card soft svc-card">
+                <h3 data-i18n="svc.10.t"></h3>
+                <p class="muted small" data-i18n="svc.10.p"></p>
+              </div>
+            </div>
           </div>
-          <div class="card soft">
-            <h3 data-i18n="svc.2.t"></h3>
-            <p class="muted small" data-i18n="svc.2.p"></p>
-          </div>
-          <div class="card soft">
-            <h3 data-i18n="svc.3.t"></h3>
-            <p class="muted small" data-i18n="svc.3.p"></p>
-          </div>
-          <div class="card soft">
-            <h3 data-i18n="svc.4.t"></h3>
-            <p class="muted small" data-i18n="svc.4.p"></p>
-          </div>
+
+          <button class="svc-nav next" type="button" aria-label="Next service" data-svc-next>›</button>
+
+          <div class="dots svc-dots" data-svc-dots aria-label="Service slide controls"></div>
         </div>
       </div>
     </section>
+
 
     <section class="section section-white">
       <div class="container grid-2">
@@ -151,20 +190,6 @@
   <script src="assets/calendly.js"></script>
   <script src="assets/socials.js"></script>
   <script src="assets/hero-slider.js"></script>
-  
-  <script src="assets/nav.js"></script>
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/69dfcdddd2ad971c3a3293db/1jm93oaph';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+  <script src="assets/services-slider.js"></script>
 </body>
 </html>

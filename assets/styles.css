@@ -143,3 +143,59 @@ html[lang="en"] .lang-en{display:inline;}
 .socials a:hover{background:rgba(255,255,255,.22);}
 .socials svg{width:18px;height:18px;}
 
+
+
+/* Services slider */
+.services-head h2{font-size:34px;letter-spacing:-.02em;}
+@media (max-width:720px){.services-head h2{font-size:28px;}}
+
+.services-slider{position:relative;}
+.svc-viewport{
+  overflow-x:auto;
+  overflow-y:hidden;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+  padding-bottom:10px;
+}
+.svc-viewport::-webkit-scrollbar{display:none;}
+
+.svc-track{
+  display:flex;
+  gap:14px;
+  padding:4px 2px;
+}
+.svc-card{
+  scroll-snap-align:start;
+  min-width:260px;
+  max-width:320px;
+}
+@media (min-width:900px){
+  .svc-card{min-width:280px;}
+}
+
+.svc-nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-60%);
+  width:40px;
+  height:40px;
+  border-radius:999px;
+  border:1px solid rgba(15,23,42,.12);
+  background:rgba(255,255,255,.85);
+  box-shadow:0 10px 22px rgba(0,0,0,.10);
+  color:#0f172a;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+}
+.svc-nav.prev{left:-10px;}
+.svc-nav.next{right:-10px;}
+.svc-nav:hover{background:rgba(255,255,255,.95);}
+@media (max-width:720px){
+  .svc-nav{display:none;}
+}
+
+.svc-dots{display:flex;gap:8px;justify-content:center;margin-top:8px;}

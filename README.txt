@@ -24,9 +24,14 @@ Important config:
    socials.instagram / youtube / linkedin (add your links here)
 
 Run locally:
-- Open PowerShell in the project folder
-- python -m http.server 8000
+cd "C:\Users\hp\Desktop\academic-advisor-template"
+python -m http.server 8000
 - Visit: http://localhost:8000
+
+API: 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
+
+idari ve resmi prosedürlerini bizzat yaşamış. vize vatandaşlık
+tek hayatın olması, kariyer ve akademik yolunun önemi,
 
 If you ever need diagnostics:
 - Open: http://localhost:8000/results.html?debug=1
