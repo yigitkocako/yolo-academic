@@ -1,197 +1,209 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>YOLO Academic</title>
+  
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css" />
+<link rel="stylesheet" href="assets/mobile-nav.css?v=2" />
+<link rel="stylesheet" href="assets/custom.css" />
+<link rel="stylesheet" href="assets/cta-contrast-fix.css?v=2" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="assets/styles.css" />
-  <link rel="stylesheet" href="assets/mobile-nav.css?v=1" />
-  <link rel="stylesheet" href="assets/cta-contrast-fix.css?v=1">
+  <title>YOLO Academic | İrlanda Eğitim Danışmanlığı</title>
+  <meta name="description" content="İrlanda'da üniversite, dil okulu, lise, yaşam ve kariyer planı için kişisel akademik danışmanlık." />
 </head>
 <body class="site">
-  <nav class="nav">
-    <div class="nav-inner">
-      <a class="brand" href="index.html" aria-label="YOLO Academic home">
-        <span class="logo" aria-hidden="true"></span>
-        <span class="brand-text">
-          <span class="brand-name">YOLO Academic</span>
-          <span class="brand-sub">Academic Consultancy</span>
-        </span>
-      </a>
 
-      <div class="nav-right row wrap">
-        <div class="tabs">
-          <a class="tab active" href="index.html" data-i18n="nav.home"></a>
-          <a class="tab" href="finder.html" data-i18n="nav.finder"></a>
-          <a class="tab" href="results.html" data-i18n="nav.results"></a>
-          <a class="tab" href="insights.html" data-i18n="nav.insights"></a>
-          <a class="tab" href="sources.html" data-i18n="nav.about"></a>
-        </div>
-        <button id="langToggle" class="lang-toggle" type="button" aria-label="Change language">EN</button>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="YOLO Academic home">
+      <span class="logo" aria-hidden="true"></span>
+      <span class="brand-text">
+        <span class="brand-name">YOLO Academic</span>
+        <span class="brand-sub">You Only Live Once!</span>
+      </span>
+    </a>
+    <div class="nav-right row wrap">
+      <div class="tabs">
+        <a class="tab active" href="index.html" data-i18n="nav.home"></a>
+        <a class="tab " href="services.html" data-i18n="nav.services"></a>
+        <a class="tab " href="finder.html" data-i18n="nav.finder"></a>
+        <a class="tab " href="insights.html" data-i18n="nav.insights"></a>
+        <a class="tab " href="sources.html" data-i18n="nav.about"></a>
       </div>
+      <button id="langToggle" class="lang-toggle" type="button" aria-label="Change language">EN</button>
     </div>
-  </nav>
+  </div>
+</nav>
 
-
-  <header class="hero-slider" aria-label="Hero">
-    <div class="hero-slides" data-hero-slides>
-      <!-- Put hero images in /assets as hero-1.jpg, hero-2.jpg, hero-3.jpg (and more if you want) -->
-      <div class="hero-slide is-active" style="background-image:url('assets/hero-1.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('assets/hero-2.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('assets/hero-3.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('assets/hero-4.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('assets/hero-5.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('assets/hero-6.jpg')"></div>
+<header class="hero-slider" aria-label="Hero">
+  <div class="hero-slides" data-hero-slides>
+    <div class="hero-slide is-active" style="background-image:url('assets/hero-1.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/hero-4.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/hero-5.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/hero-6.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/hero-7.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/hero-8.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/hero-9.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/hero-10.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/hero-11.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/hero-12.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/hero-13.jpg')"></div>
+  </div>
+  <div class="hero-grad" aria-hidden="true"></div>
+  <div class="container hero-content">
+    <div class="hero-kicker" data-i18n="landing.kicker"></div>
+    <h1 class="hero-title" data-i18n="landing.h1"></h1>
+    <p class="hero-text" data-i18n="landing.p"></p>
+    <div class="trust-chips">
+      <a class="chip" href="services.html" data-i18n="landing.trust.1"></a>
+      <a class="chip" href="services.html" data-i18n="landing.trust.2"></a>
+      <a class="chip" href="services.html" data-i18n="landing.trust.3"></a>
     </div>
-
-    <div class="hero-grad" aria-hidden="true"></div>
-
-    <div class="container hero-content">
-      <div class="hero-kicker" data-i18n="landing.kicker"></div>
-      <h1 class="hero-title" data-i18n="landing.h1"></h1>
-      <p class="hero-text" data-i18n="landing.p"></p>
-
-      <div class="trust-chips">
-        <a class="chip" href="sources.html#feedback" style="text-decoration:none" data-i18n="landing.trust.1"></a>
-        <a class="chip" href="sources.html#partners" style="text-decoration:none" data-i18n="landing.trust.2"></a>
-        <a class="chip" href="sources.html#language-career" style="text-decoration:none" data-i18n="landing.trust.3"></a>
-      </div>
-
-      <div class="hero-actions">
-        <a class="btn primary" href="finder.html" data-i18n="landing.cta.start"></a>
-        <a class="btn ghost" data-calendly href="#" data-i18n="call.btn"></a>
-      </div>
-
-      <div class="hero-dots" data-hero-dots aria-label="Slide controls"></div>
+    <div class="hero-actions">
+      <a class="btn primary" href="finder.html" data-i18n="landing.cta.start"></a>
+      <a class="btn ghost" data-calendly href="#" data-i18n="call.btn"></a>
     </div>
-  </header>
-
-  <main>
-    
-    <section class="section section-light services-section">
-      <div class="container">
-        <div class="section-head services-head">
+    <div class="hero-dots" data-hero-dots aria-label="Slide controls"></div>
+  </div>
+</header>
+<main>
+  <section class="section section-light services-section">
+    <div class="container">
+      <div class="section-head services-head">
+        <div>
           <h2 data-i18n="services.title"></h2>
           <p class="muted" data-i18n="services.sub"></p>
         </div>
-
-        <div class="services-slider" data-svc-slider>
-          <button class="svc-nav prev" type="button" aria-label="Previous service" data-svc-prev>‹</button>
-
-          <div class="svc-viewport" data-svc-viewport>
-            <div class="svc-track" data-svc-track>
-              <div class="card soft svc-card">
-                <h3 data-i18n="svc.1.t"></h3>
-                <p class="muted small" data-i18n="svc.1.p"></p>
-              </div>
-              <div class="card soft svc-card">
-                <h3 data-i18n="svc.2.t"></h3>
-                <p class="muted small" data-i18n="svc.2.p"></p>
-              </div>
-              <div class="card soft svc-card">
-                <h3 data-i18n="svc.3.t"></h3>
-                <p class="muted small" data-i18n="svc.3.p"></p>
-              </div>
-              <div class="card soft svc-card">
-                <h3 data-i18n="svc.9.t"></h3>
-                <p class="muted small" data-i18n="svc.9.p"></p>
-              </div>
-              <div class="card soft svc-card">
-                <h3 data-i18n="svc.7.t"></h3>
-                <p class="muted small" data-i18n="svc.7.p"></p>
-              </div>
-              <div class="card soft svc-card">
-                <h3 data-i18n="svc.8.t"></h3>
-                <p class="muted small" data-i18n="svc.8.p"></p>
-              </div>
-              <div class="card soft svc-card">
-                <h3 data-i18n="svc.5.t"></h3>
-                <p class="muted small" data-i18n="svc.5.p"></p>
-              </div>
-              <div class="card soft svc-card">
-                <h3 data-i18n="svc.6.t"></h3>
-                <p class="muted small" data-i18n="svc.6.p"></p>
-              </div>
-              <div class="card soft svc-card">
-                <h3 data-i18n="svc.4.t"></h3>
-                <p class="muted small" data-i18n="svc.4.p"></p>
-              </div>
-              <div class="card soft svc-card">
-                <h3 data-i18n="svc.10.t"></h3>
-                <p class="muted small" data-i18n="svc.10.p"></p>
-              </div>
-            </div>
-          </div>
-
-          <button class="svc-nav next" type="button" aria-label="Next service" data-svc-next>›</button>
-
-          <div class="dots svc-dots" data-svc-dots aria-label="Service slide controls"></div>
-        </div>
+        <a class="btn" href="services.html" data-i18n="services.all"></a>
       </div>
-    </section>
-
-
-    <section class="section section-white">
-      <div class="container grid-2">
-        <div class="card">
-          <h2 data-i18n="tool.title"></h2>
-          <p class="muted" data-i18n="tool.p"></p>
-          <div class="row wrap" style="margin-top:10px;">
-            <a class="btn primary" href="finder.html" data-i18n="tool.try"></a>
-            <a class="btn" href="sources.html" data-i18n="tool.about"></a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h2 data-i18n="how.title"></h2>
-          <div class="stack">
-            <div class="item">
-              <h3 data-i18n="how.1.t"></h3>
-              <p class="muted small" data-i18n="how.1.p"></p>
-            </div>
-            <div class="item">
-              <h3 data-i18n="how.2.t"></h3>
-              <p class="muted small" data-i18n="how.2.p"></p>
-            </div>
-            <div class="item">
-              <h3 data-i18n="how.3.t"></h3>
-              <p class="muted small" data-i18n="how.3.p"></p>
-            </div>
-          </div>
-        </div>
+      <div class="cards-4 service-pillar-grid">
+        <a class="card soft service-pillar" href="services.html">
+          <div class="pillar-icon">🎓</div><h3 data-i18n="pillar.uni.t"></h3><p class="muted small" data-i18n="pillar.uni.p"></p>
+        </a>
+        <a class="card soft service-pillar" href="services.html">
+          <div class="pillar-icon">💬</div><h3 data-i18n="pillar.lang.t"></h3><p class="muted small" data-i18n="pillar.lang.p"></p>
+        </a>
+        <a class="card soft service-pillar" href="services.html">
+          <div class="pillar-icon">🏫</div><h3 data-i18n="pillar.high.t"></h3><p class="muted small" data-i18n="pillar.high.p"></p>
+        </a>
+        <a class="card soft service-pillar" href="services.html">
+          <div class="pillar-icon">🇮🇪</div><h3 data-i18n="pillar.life.t"></h3><p class="muted small" data-i18n="pillar.life.p"></p>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section cta-band">
-      <div class="container cta-inner">
+  <section class="section section-white process-showcase" id="surec">
+    <div class="container">
+      <div class="section-head process-head">
         <div>
-          <h2 data-i18n="cta.title"></h2>
-          <p class="muted" data-i18n="cta.p"></p>
-          <div class="socials" aria-label="Social links">
-            <a data-social="instagram" href="#" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M17.5 6.6h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></a>
-            <a data-social="youtube" href="#" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8.2s-.2-1.5-.8-2.2c-.8-.9-1.7-.9-2.1-1C15.2 4.8 12 4.8 12 4.8h0s-3.2 0-6.1.2c-.4.1-1.3.1-2.1 1C3.2 6.7 3 8.2 3 8.2S2.8 10 2.8 11.9v.2C2.8 14 3 15.8 3 15.8s.2 1.5.8 2.2c.8.9 1.9.9 2.4 1 1.7.2 5.8.2 5.8.2s3.2 0 6.1-.2c.4-.1 1.3-.1 2.1-1 .6-.7.8-2.2.8-2.2s.2-1.8.2-3.7v-.2C21.2 10 21 8.2 21 8.2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 9.3l5.2 2.7-5.2 2.7V9.3z" fill="currentColor"/></svg></a>
-            <a data-social="linkedin" href="#" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.8a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" fill="currentColor"/><path d="M3 10h2.2v11H3V10z" fill="currentColor"/><path d="M8.1 10H10v1.5h.1c.3-.6 1.3-1.7 3.1-1.7 2.1 0 3.8 1.3 3.8 4.3V21h-2.2v-6c0-1.7-.6-2.8-2.1-2.8-1.1 0-1.8.7-2.1 1.4-.1.3-.1.7-.1 1.1V21H8.1V10z" fill="currentColor"/></svg></a>
-          </div>
+          <div class="eyebrow"><span class="lang-tr">Aşamalar</span><span class="lang-en">Process</span></div>
+          <h2><span class="lang-tr">Süreç nasıl ilerler?</span><span class="lang-en">How does the process work?</span></h2>
+          <p class="muted"><span class="lang-tr">İlk görüşmeden İrlanda’ya varış ve adaptasyona kadar tüm adımları düzenli, takip edilebilir ve kişisel bir planla yönetiyoruz.</span><span class="lang-en">From the first consultation to arrival and adaptation in Ireland, we manage every step with a clear, personal and trackable plan.</span></p>
         </div>
-        <div class="row wrap">
-          <a class="btn primary" href="finder.html" data-i18n="landing.cta.start"></a>
-          <a class="btn ghost" data-calendly href="#" data-i18n="call.btn"></a>
+        <a class="btn primary" href="finder.html"><span class="lang-tr">Planını oluştur</span><span class="lang-en">Build your plan</span></a>
+      </div>
+
+      <div class="process-flow" aria-label="YOLO Academic process timeline">
+        <div class="flow-step reveal-step">
+          <article class="flow-card">
+            <div class="flow-kicker"><span class="lang-tr">1. Aşama</span><span class="lang-en">Step 1</span></div>
+            <h3><span class="lang-tr">Ön Görüşme</span><span class="lang-en">Intro Consultation</span></h3>
+            <p><span class="lang-tr">Yurt dışında eğitim almayı düşünen öğrencimiz ve velisiyle yüz yüze ya da çevrim içi bir ön görüşme yapılır. Bu görüşmede öğrencinin hedefi, akademik geçmişi, İngilizce seviyesi, bütçesi ve İrlanda beklentileri değerlendirilir.</span><span class="lang-en">We meet the student and family online or face to face to understand goals, academic background, English level, budget and expectations for Ireland.</span></p>
+            <p><span class="lang-tr">Uygun okul ve program seçenekleri, ilk evrak listesi, danışmanlık kapsamı ve ücretler paylaşılır. Öğrencinin ilk evrakları incelenir; ülke/okul seçenekleri netleştirilir ve süreç düzenli görüşmelerle takip edilecek şekilde planlanır.</span><span class="lang-en">We share suitable school and programme options, the first document list, the scope of consultancy and fees. Initial documents are reviewed, school options are clarified and the process is planned through regular check-ins.</span></p>
+          </article>
+          <div class="flow-marker"><span>1</span><i aria-hidden="true">↓</i></div>
+          <figure class="flow-visual flow-visual-right" aria-hidden="true"><img src="assets/process-1.webp" alt=""></figure>
+        </div>
+
+        <div class="flow-step flow-step-right reveal-step">
+          <figure class="flow-visual flow-visual-left" aria-hidden="true"><img src="assets/process-2.webp" alt=""></figure>
+          <div class="flow-marker"><span>2</span><i aria-hidden="true">↓</i></div>
+          <article class="flow-card">
+            <div class="flow-kicker"><span class="lang-tr">2. Aşama</span><span class="lang-en">Step 2</span></div>
+            <h3><span class="lang-tr">Listeleme & Değerlendirme</span><span class="lang-en">Listing & Evaluation</span></h3>
+            <p><span class="lang-tr">Başvuru yapılabilecek okul ve programlar belirlendikten sonra her kurumun kabul şartları ve evrak beklentileri detaylandırılır. Tüm bilgiler öğrenci ve velisiyle e-posta üzerinden anlaşılır bir şekilde paylaşılır.</span><span class="lang-en">After suitable schools and programmes are identified, each institution’s entry criteria and document requirements are detailed and shared clearly with the student and family by email.</span></p>
+            <p><span class="lang-tr">Evrak hazırlama sürecinde destek sağlanır. Okulun karar öncesi mülakat beklentisi varsa, öğrencimiz önce ekibimizle pratik yapar; kendini hazır hissettiğinde asıl mülakata girer. Başvuru sonuçları geldikçe birlikte değerlendirilir.</span><span class="lang-en">We support document preparation. If an interview is required, the student first practises with our team and then attends the official interview when ready. Application outcomes are reviewed together as they arrive.</span></p>
+          </article>
+        </div>
+
+        <div class="flow-step reveal-step">
+          <article class="flow-card">
+            <div class="flow-kicker"><span class="lang-tr">3. Aşama</span><span class="lang-en">Step 3</span></div>
+            <h3><span class="lang-tr">Başvuru & Vize</span><span class="lang-en">Application & Visa</span></h3>
+            <p><span class="lang-tr">Kayıt yapılacak okul netleştiğinde kabul mektubu, kayıt şartları, ödeme/depozito bilgileri ve okul iletişimi takip edilir. Öğrencinin eğitim alacağı kuruma yakın yurt veya konaklama alternatifleri birlikte değerlendirilir.</span><span class="lang-en">Once the final school is selected, we follow the offer letter, enrolment conditions, payment/deposit details and school communication. Accommodation options close to the institution are reviewed together.</span></p>
+            <p><span class="lang-tr">Kayıt ve konaklama adımları ilerledikten sonra vize başvurusu için gerekli belgeler, finansal kanıt, sigorta ve başvuru süreci planlanır. Her adımda öğrencinin dosyasının düzenli ve eksiksiz ilerlemesi hedeflenir.</span><span class="lang-en">After enrolment and accommodation steps progress, visa documents, financial evidence, insurance and the application timeline are planned. The aim is to keep the student’s file organised and complete at every step.</span></p>
+          </article>
+          <div class="flow-marker"><span>3</span><i aria-hidden="true">↓</i></div>
+          <figure class="flow-visual flow-visual-right" aria-hidden="true"><img src="assets/process-3.webp" alt=""></figure>
+        </div>
+
+        <div class="flow-step flow-step-right reveal-step">
+          <figure class="flow-visual flow-visual-left" aria-hidden="true"><img src="assets/process-4.webp" alt=""></figure>
+          <div class="flow-marker"><span>4</span></div>
+          <article class="flow-card">
+            <div class="flow-kicker"><span class="lang-tr">4. Aşama</span><span class="lang-en">Step 4</span></div>
+            <h3><span class="lang-tr">Varış & Adaptasyon</span><span class="lang-en">Arrival & Adaptation</span></h3>
+            <p><span class="lang-tr">Öğrencimiz İrlanda’ya ulaştıktan sonra da iletişim devam eder. İlk günler, şehir yaşamına alışma, okul başlangıcı, IRP/GNIB kaydı, konaklama, part-time iş arama ve günlük yaşam sorularında pratik yönlendirme sağlanır.</span><span class="lang-en">Support continues after arrival in Ireland. We provide practical guidance on the first days, settling in, school start, IRP/GNIB registration, accommodation, part-time job search and everyday questions.</span></p>
+            <p><span class="lang-tr">Karşılaşılabilecek sorunlarda öğrencimiz yalnız bırakılmaz; alternatifler değerlendirilir ve İrlanda’daki bağlantılarımızla çözüm odaklı destek sunulur.</span><span class="lang-en">If challenges arise, the student is not left alone; alternatives are reviewed and solution-focused support is offered through our Ireland-based connections.</span></p>
+          </article>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <script src="assets/i18n.js"></script>
-  <script src="assets/mobile-nav.js?v=1"></script>
-  <script src="assets/config.js"></script>
-  <script src="assets/calendly.js"></script>
-  <script src="assets/socials.js"></script>
-  <script src="assets/hero-slider.js"></script>
-  <script src="assets/services-slider.js"></script>
+  <section class="section section-light">
+    <div class="container grid-2">
+      <div class="card">
+        <h2 data-i18n="tool.title"></h2>
+        <p class="muted" data-i18n="tool.p"></p>
+        <div class="row wrap" style="margin-top:10px;">
+          <a class="btn primary" href="finder.html" data-i18n="tool.try"></a>
+          <a class="btn" href="services.html" data-i18n="tool.about"></a>
+        </div>
+      </div>
+      <div class="card ireland-note-card">
+        <h2 data-i18n="why.title"></h2>
+        <ul class="muted check-list">
+          <li data-i18n="why.1"></li>
+          <li data-i18n="why.2"></li>
+          <li data-i18n="why.3"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="container cta-inner">
+      <div>
+        <h2 data-i18n="cta.title"></h2>
+        <p class="muted" data-i18n="cta.p"></p>
+        <div class="socials" aria-label="Social links">
+          <a data-social="instagram" href="#" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M17.5 6.6h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></a>
+          <a data-social="youtube" href="#" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8.2s-.2-1.5-.8-2.2c-.8-.9-1.7-.9-2.1-1C15.2 4.8 12 4.8 12 4.8s-3.2 0-6.1.2c-.4.1-1.3.1-2.1 1C3.2 6.7 3 8.2 3 8.2S2.8 10 2.8 11.9v.2C2.8 14 3 15.8 3 15.8s.2 1.5.8 2.2c.8.9 1.9.9 2.4 1 1.7.2 5.8.2 5.8.2s3.2 0 6.1-.2c.4-.1 1.3-.1 2.1-1 .6-.7.8-2.2.8-2.2s.2-1.8.2-3.7v-.2C21.2 10 21 8.2 21 8.2z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 9.3l5.2 2.7-5.2 2.7V9.3z" fill="currentColor"/></svg></a>
+          <a data-social="linkedin" href="#" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.8a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" fill="currentColor"/><path d="M3 10h2.2v11H3V10z" fill="currentColor"/><path d="M8.1 10H10v1.5h.1c.3-.6 1.3-1.7 3.1-1.7 2.1 0 3.8 1.3 3.8 4.3V21h-2.2v-6c0-1.7-.6-2.8-2.1-2.8-1.1 0-1.8.7-2.1 1.4-.1.3-.1.7-.1 1.1V21H8.1V10z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div class="row wrap">
+        <a class="btn primary" href="finder.html" data-i18n="landing.cta.start"></a>
+        <a class="btn ghost" data-calendly href="#" data-i18n="call.btn"></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/mobile-nav.js?v=2"></script>
+<script src="assets/config.js"></script>
+<script src="assets/calendly.js"></script>
+<script src="assets/tawk.js"></script>
+
+<script src="assets/socials.js"></script>
+<script src="assets/hero-slider.js"></script>
+<script src="assets/reveal-on-scroll.js"></script>
 </body>
 </html>

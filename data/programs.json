@@ -1,0 +1,163 @@
+[
+  {
+    "id": "tcd",
+    "type": "university",
+    "country_id": "ie",
+    "name_tr": "Trinity College Dublin",
+    "name_en": "Trinity College Dublin",
+    "city": "Dublin",
+    "city_key": "dublin",
+    "qs_band": "top100",
+    "degree_supported": [
+      "ug",
+      "pg"
+    ],
+    "fields": [
+      "computing",
+      "business",
+      "engineering",
+      "arts"
+    ],
+    "intakes": [
+      "sep"
+    ],
+    "tuition_est_eur": 25000,
+    "tuition_suffix": "/yr",
+    "living_est_month_eur": 1600,
+    "career_boost": true,
+    "description_tr": "Dublin merkezli, prestij odaklı üniversite seçeneği. Program ve ücretler bölüme göre değiştiği için resmi sayfalardan doğrulanmalıdır.",
+    "description_en": "A prestige-focused university option in central Dublin. Programmes and fees vary by course and should be verified on official pages.",
+    "links": {
+      "website": "https://www.tcd.ie/",
+      "international": "https://www.tcd.ie/study/international/",
+      "tuition": "https://www.tcd.ie/courses/undergraduate/fees/"
+    }
+  },
+  {
+    "id": "ucd",
+    "type": "university",
+    "country_id": "ie",
+    "name_tr": "University College Dublin",
+    "name_en": "University College Dublin",
+    "city": "Dublin",
+    "city_key": "dublin",
+    "qs_band": "top200",
+    "degree_supported": [
+      "ug",
+      "pg"
+    ],
+    "fields": [
+      "computing",
+      "business",
+      "engineering",
+      "health"
+    ],
+    "intakes": [
+      "sep",
+      "jan"
+    ],
+    "tuition_est_eur": 23000,
+    "tuition_suffix": "/yr",
+    "living_est_month_eur": 1550,
+    "career_boost": true,
+    "description_tr": "Geniş program portföyü ve Dublin iş ağı açısından güçlü bir üniversite seçeneği. Ücretler ve kabul şartları program bazında kontrol edilmelidir.",
+    "description_en": "A strong university option with a broad programme portfolio and Dublin career network. Fees and entry requirements should be checked per programme.",
+    "links": {
+      "website": "https://www.ucd.ie/",
+      "international": "https://www.ucd.ie/global/",
+      "tuition": "https://www.ucd.ie/students/fees/noneucoursefees/"
+    }
+  },
+  {
+    "id": "language-dublin",
+    "type": "language",
+    "country_id": "ie",
+    "name_tr": "Dublin Dil Okulu Yol Haritası",
+    "name_en": "Dublin Language School Roadmap",
+    "city": "Dublin",
+    "city_key": "dublin",
+    "qs_band": "unranked",
+    "degree_supported": [
+      "foundation"
+    ],
+    "fields": [
+      "english"
+    ],
+    "intakes": [
+      "flexible",
+      "summer"
+    ],
+    "tuition_est_eur": 3500,
+    "tuition_suffix": "+",
+    "living_est_month_eur": 1500,
+    "career_boost": true,
+    "description_tr": "Genel İngilizce, sınav hazırlık veya akademik İngilizce hedeflerine göre süre, şehir, bütçe ve konaklama planı çıkarılır. Belirli okul listesi danışmanlık görüşmesinde netleştirilir.",
+    "description_en": "A plan for General English, exam preparation or academic English based on duration, city, budget and accommodation. Specific school options are finalised during consultation.",
+    "links": {
+      "website": "services.html"
+    }
+  },
+  {
+    "id": "highschool-route",
+    "type": "highschool",
+    "country_id": "ie",
+    "name_tr": "İrlanda Lise Eğitimi Yol Haritası",
+    "name_en": "Irish High School Roadmap",
+    "city": "Ireland",
+    "city_key": "other",
+    "qs_band": "unranked",
+    "degree_supported": [
+      "foundation"
+    ],
+    "fields": [
+      "arts",
+      "english"
+    ],
+    "intakes": [
+      "sep"
+    ],
+    "tuition_est_eur": 12000,
+    "tuition_suffix": "+",
+    "living_est_month_eur": null,
+    "career_boost": false,
+    "description_tr": "Öğrencinin yaşı, sınıf seviyesi, konaklama ihtiyacı ve aile beklentisine göre uygun lise yolu planlanır. Boarding/day school detayları ayrıca değerlendirilir.",
+    "description_en": "The right high school route is planned based on age, grade level, accommodation needs and family expectations. Boarding/day school details are reviewed separately.",
+    "links": {
+      "website": "services.html"
+    }
+  },
+  {
+    "id": "life-career",
+    "type": "life",
+    "country_id": "ie",
+    "name_tr": "İrlanda Yaşam & Kariyer Destek Paketi",
+    "name_en": "Ireland Life & Career Support",
+    "city": "Dublin / Ireland",
+    "city_key": "other",
+    "qs_band": "unranked",
+    "degree_supported": [
+      "ug",
+      "pg",
+      "foundation"
+    ],
+    "fields": [
+      "computing",
+      "business",
+      "engineering",
+      "health",
+      "arts",
+      "english"
+    ],
+    "intakes": [
+      "flexible"
+    ],
+    "tuition_est_eur": null,
+    "living_est_month_eur": null,
+    "career_boost": true,
+    "description_tr": "Konaklama arama, IRP/GNIB hazırlığı, CV/LinkedIn, part-time iş arama ve ilk ay adaptasyonu için pratik destek modülü.",
+    "description_en": "Practical support for accommodation search, IRP/GNIB preparation, CV/LinkedIn, part-time job search and first-month adaptation.",
+    "links": {
+      "website": "services.html"
+    }
+  }
+]

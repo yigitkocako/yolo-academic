@@ -1,37 +1,38 @@
-YOLO Academic — Clean & Stable Build
+YOLO Academic — Ireland-only Build
 
-This package is a clean, stable version of your site with:
-- Consistent navbar on ALL pages (Home / Find / Results / Insights / About)
-- Working TR/EN language toggle (persists via localStorage)
-- Results debug banner removed (only visible with ?debug=1)
-- Placeholder badge fixed (no more 'badge.placeholder' keys)
-- Social icons (Instagram / YouTube / LinkedIn) added to the blue CTA section
-- Hero slider supports ANY number of images (dots auto-create)
+Bu paket, önceki çok ülkeli yapıyı İrlanda odaklı hale getirir.
 
-How to install (Windows):
-1) Unzip this folder.
-2) Replace your existing project folder with this one (or copy the files over).
-3) Put your hero images into /assets:
-   - hero-1.jpg
-   - hero-2.jpg
-   - hero-3.jpg
-   (You can add more slides by adding more <div class="hero-slide"...> lines in index.html)
+Öne çıkan değişiklikler:
+- Kanada ve İngiltere içerikleri kaldırıldı.
+- Menü güncellendi: Ana Sayfa / Hizmetlerimiz / Planını Oluştur / Yazılar / Hakkında.
+- Ana sayfaya İrlanda odaklı 4 hizmet kartı eklendi: Üniversite, Dil Okulu, Lise, Yaşam & Kariyer.
+- Ana sayfaya İrlanda odaklı süreç şeması eklendi.
+- Finder artık ülke seçtirmiyor; İrlanda içinde eğitim türü, şehir, bütçe, IELTS ve hedefe göre çalışıyor.
+- Results sayfası artık önerilen ülkeler yerine “Önerilen yollar” gösteriyor.
+- README içindeki API key kaldırıldı. Eski key gerçekse rotate edilmelidir.
+- Kesin ev adresi yerine “Dublin, Ireland” kullanıldı. İstersen şirket adresini sonra ekleyebilirsin.
 
-Important config:
-- assets/config.js:
-   calendlyUrl
-   sheets.sheetId + universitiesGid
-   socials.instagram / youtube / linkedin (add your links here)
+Dosya yapısı:
+- HTML dosyaları root klasörde
+- CSS/JS/görseller: /assets
+- JSON data: /data
 
-Run locally:
-cd "C:\Users\hp\Desktop\academic-advisor-template"
+Local test:
+cd "BU_KLASOR"
 python -m http.server 8000
-- Visit: http://localhost:8000
+http://localhost:8000
 
-API: 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
+Deploy:
+Netlify’a bu klasörü veya zip içeriğini yükleyebilirsin.
 
-idari ve resmi prosedürlerini bizzat yaşamış. vize vatandaşlık
-tek hayatın olması, kariyer ve akademik yolunun önemi,
 
-If you ever need diagnostics:
-- Open: http://localhost:8000/results.html?debug=1
+2026-05-10 mini revizyon:
+- Marka alt metni “You Only Live Once!” yapıldı.
+- Hizmet linkleri services.html sayfasının en üstüne yönlendirilecek şekilde sadeleştirildi.
+- “Üniversite Danışmanlığı” başlığı “Lise / Üniversite Danışmanlığı” olarak güncellendi.
+- Aşamalar metinleri genişletildi ve “Shortlist” yerine “Listeleme & Değerlendirme” kullanıldı.
+
+v3 updates:
+- Kullanıcının gönderdiği 8 yeni İrlanda görseli ana sayfa hero slider'a eklendi.
+- Hero bölümünün altına hafif yamuk/diagonal fade geçiş efekti eklendi.
+- Yeni görseller web için optimize edilmiş JPEG olarak assets klasörüne kaydedildi.
