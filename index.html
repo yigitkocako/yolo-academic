@@ -156,23 +156,29 @@
     </div>
   </section>
 
-  <section class="section section-light">
-    <div class="container grid-2">
-      <div class="card">
-        <h2 data-i18n="tool.title"></h2>
-        <p class="muted" data-i18n="tool.p"></p>
-        <div class="row wrap" style="margin-top:10px;">
-          <a class="btn primary" href="finder.html" data-i18n="tool.try"></a>
-          <a class="btn" href="services.html" data-i18n="tool.about"></a>
+
+  <section class="section section-light institution-showcase-section" id="kurumlar">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow"><span class="lang-tr">Kurumlar</span><span class="lang-en">Institutions</span></div>
+          <h2><span class="lang-tr">İrlanda’da değerlendirebileceğiniz kurumlar</span><span class="lang-en">Institutions you can consider in Ireland</span></h2>
+          <p class="muted"><span class="lang-tr">Üniversite, dil okulu ve lise seçeneklerinden ilk örnekler. Çekimlerden sonra kart arka planlarını okul fotoğraflarıyla güncelleyebiliriz.</span><span class="lang-en">Initial examples across universities, language schools and high schools. We can replace card backgrounds with your own school photos after shooting.</span></p>
         </div>
+        <a class="btn primary" href="finder.html"><span class="lang-tr">Planını oluştur</span><span class="lang-en">Build your plan</span></a>
       </div>
-      <div class="card ireland-note-card">
-        <h2 data-i18n="why.title"></h2>
-        <ul class="muted check-list">
-          <li data-i18n="why.1"></li>
-          <li data-i18n="why.2"></li>
-          <li data-i18n="why.3"></li>
-        </ul>
+
+      <div class="institution-category-block">
+        <div class="institution-category-title"><h3><span class="lang-tr">Üniversiteler</span><span class="lang-en">Universities</span></h3></div>
+        <div class="institution-scroll" data-institution-list="university" data-limit="0" data-autoplay="true"></div>
+      </div>
+      <div class="institution-category-block">
+        <div class="institution-category-title"><h3><span class="lang-tr">Dil Okulları</span><span class="lang-en">Language Schools</span></h3></div>
+        <div class="institution-scroll" data-institution-list="language" data-limit="0" data-autoplay="true"></div>
+      </div>
+      <div class="institution-category-block">
+        <div class="institution-category-title"><h3><span class="lang-tr">Liseler</span><span class="lang-en">High Schools</span></h3></div>
+        <div class="institution-scroll" data-institution-list="highschool" data-limit="0" data-autoplay="true"></div>
       </div>
     </div>
   </section>
@@ -205,5 +211,6 @@
 <script src="assets/socials.js"></script>
 <script src="assets/hero-slider.js"></script>
 <script src="assets/reveal-on-scroll.js"></script>
+<script src="assets/institution-showcase.js"></script>
 </body>
 </html>

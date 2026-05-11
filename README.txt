@@ -29,10 +29,16 @@ Netlify’a bu klasörü veya zip içeriğini yükleyebilirsin.
 2026-05-10 mini revizyon:
 - Marka alt metni “You Only Live Once!” yapıldı.
 - Hizmet linkleri services.html sayfasının en üstüne yönlendirilecek şekilde sadeleştirildi.
-- “Üniversite Danışmanlığı” başlığı “Lise / Üniversite Danışmanlığı” olarak güncellendi.
+- Hizmet kartları “Üniversite” ve “Lise” olarak ayrıldı.
 - Aşamalar metinleri genişletildi ve “Shortlist” yerine “Listeleme & Değerlendirme” kullanıldı.
 
 v3 updates:
 - Kullanıcının gönderdiği 8 yeni İrlanda görseli ana sayfa hero slider'a eklendi.
 - Hero bölümünün altına hafif yamuk/diagonal fade geçiş efekti eklendi.
 - Yeni görseller web için optimize edilmiş JPEG olarak assets klasörüne kaydedildi.
+
+
+V7 update:
+- data/programs.json and data/institutions.json refreshed from cleaned Ireland-only Excel.
+- Home/About institution carousels added for Universities, Language Schools and High Schools.
+- Results page can now read local JSON, or Google Sheets Programs tab if AA_CONFIG.sheets.programsGid is set.

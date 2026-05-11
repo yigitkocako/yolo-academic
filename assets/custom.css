@@ -341,3 +341,76 @@ html[lang="en"] .lang-en{ display:inline; }
   .flow-step-right .flow-visual{min-height:160px;}
   .flow-visual img{min-height:160px;}
 }
+
+
+/* v7: Institution showcase cards */
+.institution-showcase-section{
+  background:linear-gradient(180deg,#f8fafc 0%,#eef6ff 100%);
+  overflow:hidden;
+}
+.institution-showcase-section .section-head h2,
+.institution-directory-card h2{font-size:clamp(26px,3vw,38px);letter-spacing:-.03em;margin:6px 0 8px;}
+.institution-category-block{margin-top:22px;}
+.institution-category-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.institution-category-title h3{margin:0;font-size:20px;letter-spacing:-.02em;}
+.institution-scroll{
+  display:flex;
+  gap:14px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  padding:4px 2px 16px;
+  scrollbar-width:none;
+}
+.institution-scroll::-webkit-scrollbar{display:none;}
+.institution-card{
+  position:relative;
+  flex:0 0 min(320px,82vw);
+  min-height:230px;
+  border-radius:24px;
+  overflow:hidden;
+  scroll-snap-align:start;
+  color:#fff;
+  background-image:var(--institution-bg);
+  background-size:cover;
+  background-position:center;
+  box-shadow:0 18px 44px rgba(15,23,42,.18);
+  border:1px solid rgba(255,255,255,.45);
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity .7s ease, transform .7s ease, box-shadow .25s ease;
+}
+.institution-card.is-visible{opacity:1;transform:translateY(0);}
+.institution-card:hover{box-shadow:0 22px 56px rgba(15,23,42,.24);}
+.institution-card-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,23,42,.14),rgba(15,23,42,.82));}
+.institution-card-content{position:relative;z-index:1;min-height:230px;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;}
+.institution-chip{align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.02em;padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.32);backdrop-filter:blur(8px);margin-bottom:auto;}
+.institution-card h4{margin:12px 0 6px;font-size:20px;line-height:1.15;letter-spacing:-.02em;}
+.institution-card p{margin:0;color:rgba(255,255,255,.88);font-size:12px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+.institution-meta{margin-top:8px;font-size:12px;color:rgba(255,255,255,.75);}
+.institution-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
+.mini-link{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:7px 10px;background:rgba(255,255,255,.90);color:#0f172a;text-decoration:none;font-size:12px;font-weight:600;border:1px solid rgba(255,255,255,.5);}
+.mini-link:hover{background:#fff;}
+.institution-directory-card{background:linear-gradient(135deg,#fff,rgba(37,99,235,.045));}
+.institution-scroll.directory .institution-card{flex-basis:min(285px,82vw);min-height:220px;}
+@media (min-width:1100px){.institution-card{flex-basis:calc((100% - 42px)/4);} .institution-scroll.directory .institution-card{flex-basis:calc((100% - 42px)/4);}}
+@media (max-width:720px){.institution-category-block{margin-top:18px}.institution-card{min-height:220px}}
+
+/* v10: Auto-scrolling institution carousels */
+.institution-category-block{position:relative;}
+.institution-scroll.auto-carousel{
+  scroll-behavior:smooth;
+  mask-image:linear-gradient(90deg, transparent 0, #000 34px, #000 calc(100% - 34px), transparent 100%);
+  -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 34px, #000 calc(100% - 34px), transparent 100%);
+}
+.institution-scroll.auto-carousel.is-resetting{scroll-behavior:auto;}
+.institution-scroll.auto-carousel .institution-card[data-clone="true"]{pointer-events:none;}
+@media (prefers-reduced-motion: reduce){
+  .institution-scroll.auto-carousel{scroll-behavior:auto;}
+}
+@media (max-width:720px){
+  .institution-scroll.auto-carousel{
+    mask-image:linear-gradient(90deg, transparent 0, #000 18px, #000 calc(100% - 18px), transparent 100%);
+    -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 18px, #000 calc(100% - 18px), transparent 100%);
+  }
+}
