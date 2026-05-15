@@ -1,10 +1,11 @@
+YOLO Academic — Ireland-only Build v14
 YOLO Academic — Ireland-only Build
 
 Bu paket, önceki çok ülkeli yapıyı İrlanda odaklı hale getirir.
 
 Öne çıkan değişiklikler:
 - Kanada ve İngiltere içerikleri kaldırıldı.
-- Menü güncellendi: Ana Sayfa / Hizmetlerimiz / Planını Oluştur / Yazılar / Hakkında.
+- Menü güncellendi: Ana Sayfa / Hizmetlerimiz / Planını Oluştur / Blog / Hakkında.
 - Ana sayfaya İrlanda odaklı 4 hizmet kartı eklendi: Üniversite, Dil Okulu, Lise, Yaşam & Kariyer.
 - Ana sayfaya İrlanda odaklı süreç şeması eklendi.
 - Finder artık ülke seçtirmiyor; İrlanda içinde eğitim türü, şehir, bütçe, IELTS ve hedefe göre çalışıyor.

@@ -32,11 +32,8 @@
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const tuitionRaw = $("tuitionMax")?.value || "";
-    const livingRaw = $("livingMax")?.value || "";
     let tuitionMax = tuitionRaw ? toNum(tuitionRaw) : null;
-    let livingMax = livingRaw ? toNum(livingRaw) : null;
     if (tuitionMax != null && tuitionMax >= 900000) tuitionMax = null;
-    if (livingMax != null && livingMax >= 900000) livingMax = null;
 
     const ieltsState = $("hasIelts")?.value || "any";
     const hasIeltsVal = ieltsState === "yes" ? true : ieltsState === "no" ? false : null;
@@ -50,7 +47,6 @@
       field: ($("field")?.value || "any") === "any" ? null : $("field").value,
       goal: $("goal")?.value || "balanced",
       tuitionMax,
-      livingMax,
       hasIelts: hasIeltsVal,
       ieltsScore: hasIeltsVal === true ? toNum($("ieltsScore")?.value || "") : null,
       gpa: gpaStr ? toNum(gpaStr) : null,

@@ -68,7 +68,6 @@
     if (prefs.goal === 'career' && p.career_boost) s += 5;
     if (prefs.goal === 'prestige' && ['top50','top100','top200'].includes(p.qs_band)) s += 5;
     if (prefs.tuitionMax && p.tuition_est_eur && p.tuition_est_eur > prefs.tuitionMax) s -= 12;
-    if (prefs.livingMax && p.living_est_month_eur && p.living_est_month_eur > prefs.livingMax) s -= 8;
     return clamp(Math.round(s), 0, 100);
   }
   function renderSummary(prefs){
@@ -82,7 +81,7 @@
     if (mode === 'cheapest') arr.sort((a,b)=>(a.p.tuition_est_eur??1e12)-(b.p.tuition_est_eur??1e12)||b.score-a.score);
     else if (mode === 'ranking') arr.sort((a,b)=>({top50:5,top100:4,top200:3,top500:2,top1000:1,unranked:0}[b.p.qs_band]||0)-(({top50:5,top100:4,top200:3,top500:2,top1000:1,unranked:0}[a.p.qs_band]||0)) || b.score-a.score);
     else arr.sort((a,b)=>b.score-a.score);
-    arr = arr.filter(x => x.p.type === prefs.educationType || x.p.type === 'life').slice(0, 10);
+    arr = arr.filter(x => x.p.type === prefs.educationType).slice(0, 10);
     if (!arr.length) { wrap.innerHTML = `<div class="item"><h3>${L('noneT')}</h3><p class="muted">${L('noneP')}</p></div>`; return; }
     for (const {p, score} of arr) {
       const title = lang()==='tr' ? p.name_tr : p.name_en;
