@@ -558,3 +558,50 @@ html[lang="en"] .lang-en{ display:inline; }
   #prefsForm .actions{display:grid;grid-template-columns:1fr;gap:10px;}
   #prefsForm .actions .btn{width:100%;}
 }
+
+
+/* v9: conversion tracking, simplified finder, roadmap and cookie/footer polish */
+.smart-finder{position:relative;overflow:hidden;}
+.finder-intro-row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid rgba(15,23,42,.07);}
+.finder-intro-row h2{margin:0 0 6px;font-size:20px;}
+.finder-intro-row .badge{white-space:nowrap;background:rgba(34,197,94,.10);border-color:rgba(34,197,94,.18);color:#14532d;}
+.essential-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+.essential-grid .field:last-child{grid-column:1/-1;max-width:520px;}
+.advanced-filters{margin-top:14px;border:1px solid rgba(15,23,42,.08);border-radius:18px;background:linear-gradient(180deg,rgba(248,250,252,.92),rgba(255,255,255,.88));}
+.advanced-filters summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;font-weight:700;color:#0f172a;list-style:none;}
+.advanced-filters summary::-webkit-details-marker{display:none;}
+.advanced-filters summary::after{content:"+";display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:999px;background:#fff;border:1px solid rgba(15,23,42,.10);font-weight:700;}
+.advanced-filters[open] summary::after{content:"–";}
+.advanced-filters summary small{font-weight:500;color:#667085;}
+.advanced-grid{padding:0 16px 16px;}
+.roadmap-card{margin-bottom:14px;background:linear-gradient(135deg,#ffffff,rgba(37,99,235,.055));border-color:rgba(37,99,235,.12);}
+.roadmap-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;}
+.roadmap-head h2{margin:5px 0 6px;}
+.roadmap-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px;}
+.roadmap-steps div{background:#fff;border:1px solid rgba(15,23,42,.08);border-radius:18px;padding:14px;box-shadow:0 12px 28px rgba(17,24,39,.045);}
+.roadmap-steps span{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:999px;background:var(--primary);color:#fff;font-weight:800;margin-bottom:10px;}
+.roadmap-steps strong{display:block;font-size:15px;margin-bottom:4px;}
+.results-grid{margin-top:14px;}
+.site-footer{border-top:1px solid rgba(15,23,42,.08);background:rgba(255,255,255,.78);}
+.footer-mini{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 24px;color:#667085;font-size:13px;}
+.footer-mini a{color:#344054;text-decoration:none;font-weight:600;}
+.footer-mini a:hover{text-decoration:underline;}
+.privacy-content h2{margin-top:24px;}
+.privacy-content p,.privacy-content li{line-height:1.72;}
+@media(max-width:720px){
+  .finder-intro-row{display:block;}
+  .finder-intro-row .badge{display:inline-flex;margin-top:10px;}
+  .essential-grid{grid-template-columns:1fr;}
+  .essential-grid .field:last-child{max-width:none;}
+  .advanced-filters summary{align-items:flex-start;flex-direction:column;}
+  .advanced-filters summary::after{position:absolute;right:30px;}
+  .roadmap-head{display:block;}
+  .roadmap-head .btn{width:100%;justify-content:center;margin-top:12px;}
+  .roadmap-steps{grid-template-columns:1fr;}
+  .footer-mini{display:block;text-align:center;}
+  .footer-mini a{display:inline-block;margin-top:8px;}
+}
+@media(max-width:720px){
+  iframe[src*="tawk.to"]{max-width:88vw!important;}
+}
+body.nav-open iframe[src*="tawk.to"]{display:none!important;}
