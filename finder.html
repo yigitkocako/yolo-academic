@@ -12,7 +12,11 @@
 <link rel="stylesheet" href="assets/custom.css" />
 <link rel="stylesheet" href="assets/cta-contrast-fix.css?v=2" />
 
-  <title>İrlanda Planını Oluştur | YOLO Academic</title>
+  <link rel="icon" type="image/svg+xml" href="assets/yolo-mark.svg?v=2">
+<link rel="icon" type="image/png" href="assets/favicon.png?v=2" sizes="64x64">
+<link rel="shortcut icon" href="assets/yolo-mark.svg?v=2">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
+<title>İrlanda Planını Oluştur | YOLO Academic</title>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z8W67R6XB"></script>
 <script>
@@ -22,6 +26,7 @@
 
   gtag('config', 'G-2Z8W67R6XB');
 </script>
+<script src="assets/clarity.js"></script>
 </head>
 <body class="site">
 
@@ -56,15 +61,15 @@
   <form id="prefsForm" class="card form">
     <div class="grid">
       <div class="field"><label for="educationType" data-i18n="form.educationType"></label><select id="educationType" required><option value="university" data-i18n="opt.education.university"></option><option value="language" data-i18n="opt.education.language"></option><option value="highschool" data-i18n="opt.education.highschool"></option></select></div>
-      <div class="field"><label for="city" data-i18n="form.city"></label><select id="city"><option value="any" data-i18n="opt.any"></option><option value="dublin">Dublin</option><option value="cork">Cork</option><option value="galway">Galway</option><option value="limerick">Limerick</option><option value="other">Diğer / Other</option></select></div>
+      <div class="field"><label for="city" data-i18n="form.city"></label><select id="city"><option value="any" data-i18n="opt.any"></option><option value="dublin">Dublin</option><option value="cork">Cork</option><option value="galway">Galway</option><option value="limerick">Limerick</option><option value="other" data-i18n="opt.city.other"></option></select></div>
       <div class="field"><label for="degree" data-i18n="form.degree"></label><select id="degree"><option value="any" data-i18n="opt.any"></option><option value="ug" data-i18n="opt.ug"></option><option value="pg" data-i18n="opt.pg"></option><option value="foundation" data-i18n="opt.foundation"></option></select></div>
       <div class="field"><label for="field" data-i18n="form.field"></label><select id="field"><option value="any" data-i18n="opt.any"></option><option value="computing" data-i18n="opt.computing"></option><option value="business" data-i18n="opt.business"></option><option value="engineering" data-i18n="opt.engineering"></option><option value="health" data-i18n="opt.health"></option><option value="arts" data-i18n="opt.arts"></option><option value="english" data-i18n="opt.english"></option></select></div>
       <div class="field"><label for="goal" data-i18n="form.goal"></label><select id="goal" required><option value="balanced" data-i18n="opt.balanced"></option><option value="prestige" data-i18n="opt.prestige"></option><option value="value" data-i18n="opt.value"></option><option value="career" data-i18n="opt.career"></option><option value="fast" data-i18n="opt.fast"></option></select></div>
       <div class="field"><label for="tuitionMax" data-i18n="form.tuition"></label><select id="tuitionMax"><option value="" data-i18n="opt.any"></option><option value="5000">≤ €5k</option><option value="10000">≤ €10k</option><option value="20000">≤ €20k</option><option value="35000">≤ €35k</option><option value="999999">€35k+</option></select></div>
       <div class="field"><label for="hasIelts" data-i18n="form.ielts"></label><select id="hasIelts"><option value="any" data-i18n="opt.ielts.any"></option><option value="yes" data-i18n="opt.ielts.yes"></option><option value="no" data-i18n="opt.ielts.no"></option></select></div>
       <div class="field" id="ieltsWrap" style="display:none;"><label for="ieltsScore" data-i18n="form.ieltsScore"></label><select id="ieltsScore"><option value="" data-i18n="opt.any"></option><option value="5.0">5.0</option><option value="5.5">5.5</option><option value="6.0">6.0</option><option value="6.5">6.5</option><option value="7.0">7.0</option><option value="7.5">7.5</option></select></div>
-      <div class="field"><label for="gpa" data-i18n="form.gpa"></label><input id="gpa" type="text" inputmode="decimal" placeholder="örn. 3.10" /><div class="hint muted small" data-i18n="form.gpaHint"></div></div>
-      <div class="field"><label for="intake" data-i18n="form.intake"></label><select id="intake"><option value="any" data-i18n="opt.any"></option><option value="sep" data-i18n="opt.sep"></option><option value="jan" data-i18n="opt.jan"></option><option value="summer" data-i18n="opt.summer"></option><option value="flexible" data-i18n="opt.flexible"></option></select></div>
+      <div class="field"><label for="gpa" data-i18n="form.gpa"></label><input id="gpa" type="text" inputmode="decimal" data-i18n-placeholder="form.gpaPh" /><div class="hint muted small" data-i18n="form.gpaHint"></div></div>
+      <div class="field"><label for="intake" data-i18n="form.intake"></label><select id="intake"><option value="any" data-i18n="opt.any"></option><option value="sep" data-i18n="opt.sep"></option><option value="jan" data-i18n="opt.jan"></option><option value="summer" data-i18n="opt.summer"></option></select></div>
       <div class="field"><label for="year" data-i18n="form.year"></label><select id="year"><option value="any" data-i18n="opt.year.any"></option></select></div>
       <div class="field"><label for="accommodation" data-i18n="form.accommodation"></label><select id="accommodation"><option value="any" data-i18n="opt.any"></option><option value="yes" data-i18n="opt.yes"></option><option value="no" data-i18n="opt.no"></option></select></div>
       <div class="field"><label for="notes" data-i18n="form.notes"></label><input id="notes" type="text" data-i18n-placeholder="form.notesPh" /></div>

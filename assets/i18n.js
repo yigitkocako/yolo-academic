@@ -59,34 +59,36 @@
     "form.ieltsScore": "IELTS skoru (overall)",
     "form.gpa": "GPA (opsiyonel)",
     "form.gpaHint": "Varsa 0–4 formatında yazabilirsin.",
+    "form.gpaPh": "örn. 3.10",
     "form.intake": "Başlangıç dönemi",
     "form.year": "Başlangıç yılı",
     "form.accommodation": "Konaklama desteği gerekli mi?",
     "form.notes": "Kısa not",
     "form.notesPh": "örn. Dublin olsun, part-time iş önemli",
     "form.submit": "Önerileri gör",
-    "opt.any": "Farketmez",
-    "opt.year.any": "Yıl farketmez",
+    "opt.any": "Fark etmez",
+    "opt.city.other": "Diğer",
+    "opt.year.any": "Yıl fark etmez",
     "opt.education.university": "Üniversite",
     "opt.education.language": "Dil okulu",
     "opt.education.highschool": "Lise",
     "opt.ug": "Lisans (UG)",
     "opt.pg": "Yüksek Lisans (PG)",
-    "opt.foundation": "Foundation / Pathway",
-    "opt.computing": "Computing / Data / AI",
-    "opt.business": "Business / Management",
-    "opt.engineering": "Engineering",
-    "opt.health": "Health",
-    "opt.arts": "Arts / Humanities",
+    "opt.foundation": "Hazırlık / geçiş programı",
+    "opt.computing": "Bilgisayar / Veri / Yapay Zekâ",
+    "opt.business": "İşletme / Yönetim",
+    "opt.engineering": "Mühendislik",
+    "opt.health": "Sağlık",
+    "opt.arts": "Sanat / Beşeri Bilimler",
     "opt.english": "İngilizce geliştirme",
     "opt.balanced": "Dengeli",
-    "opt.prestige": "Prestij / Ranking",
+    "opt.prestige": "Prestij / sıralama",
     "opt.value": "Fiyat / Performans",
     "opt.career": "Kariyer & çalışma",
     "opt.fast": "Hızlı başlangıç",
     "opt.yes": "Evet",
     "opt.no": "Hayır",
-    "opt.ielts.any": "Henüz bilmiyorum / farketmez",
+    "opt.ielts.any": "Henüz bilmiyorum / fark etmez",
     "opt.ielts.yes": "Var",
     "opt.ielts.no": "Yok",
     "opt.sep": "Eylül",
@@ -100,7 +102,7 @@
     "sort.label": "Sıralama",
     "sort.match": "En iyi eşleşme",
     "sort.cheapest": "En düşük maliyet",
-    "sort.ranking": "En yüksek ranking",
+    "sort.ranking": "En yüksek sıralama",
     "sort.note": "Not: Sonuçlar ilk yönlendirme amaçlıdır.",
     "sort.score": "Skor",
     "call.cta.title": "Karar vermekte zorlandın mı?",
@@ -164,6 +166,7 @@
     "form.ieltsScore": "IELTS score (overall)",
     "form.gpa": "GPA (optional)",
     "form.gpaHint": "Use 0–4 scale if available.",
+    "form.gpaPh": "e.g. 3.10",
     "form.intake": "Start period",
     "form.year": "Start year",
     "form.accommodation": "Need accommodation support?",
@@ -171,6 +174,7 @@
     "form.notesPh": "e.g. Dublin preferred, part-time work is important",
     "form.submit": "See recommendations",
     "opt.any": "Any",
+    "opt.city.other": "Other",
     "opt.year.any": "Any year",
     "opt.education.university": "University",
     "opt.education.language": "Language school",
@@ -219,6 +223,13 @@
     document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => { const key = el.getAttribute("data-i18n-placeholder"); el.setAttribute("placeholder", window.t(key)); });
   }
   function updateLangToggle() { const lang = document.documentElement.getAttribute("lang") || "tr"; const btn = document.getElementById("langToggle"); if (!btn) return; const next = lang === "tr" ? "en" : "tr"; btn.dataset.next = next; btn.textContent = next.toUpperCase(); }
+  function getSavedLang() { try { const saved = localStorage.getItem("aa_lang"); return saved === "en" || saved === "tr" ? saved : null; } catch (e) { return null; } }
+  function detectDefaultLang() {
+    const browserLang = String(navigator.language || navigator.userLanguage || "").toLowerCase();
+    if (browserLang.startsWith("tr")) return "tr";
+    if (browserLang.startsWith("en")) return "en";
+    return document.documentElement.getAttribute("lang") || "tr";
+  }
   window.setLang = function(lang) { const safe = lang === "en" ? "en" : "tr"; document.documentElement.setAttribute("lang", safe); try { localStorage.setItem("aa_lang", safe); } catch (e) {} applyI18n(); updateLangToggle(); window.dispatchEvent(new CustomEvent("aa:lang", { detail: { lang: safe } })); };
-  document.addEventListener("DOMContentLoaded", () => { const saved = (() => { try { return localStorage.getItem("aa_lang"); } catch (e) { return null; } })(); window.setLang(saved || (document.documentElement.getAttribute("lang") || "tr")); const btn = document.getElementById("langToggle"); if (btn) btn.addEventListener("click", () => { const lang = document.documentElement.getAttribute("lang") || "tr"; window.setLang(lang === "tr" ? "en" : "tr"); }); });
+  document.addEventListener("DOMContentLoaded", () => { window.setLang(getSavedLang() || detectDefaultLang()); const btn = document.getElementById("langToggle"); if (btn) btn.addEventListener("click", () => { const lang = document.documentElement.getAttribute("lang") || "tr"; window.setLang(lang === "tr" ? "en" : "tr"); }); });
 })();

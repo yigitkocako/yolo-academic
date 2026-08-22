@@ -3,7 +3,7 @@
   const esc = (v) => String(v ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
   const lang = () => document.documentElement.getAttribute('lang') || 'tr';
   const labels = {
-    tr: { website: 'Website', admissions: 'Kabul', tuition: 'Ücretler', empty: 'Kurum bulunamadı.' },
+    tr: { website: 'Web sitesi', admissions: 'Kabul', tuition: 'Ücretler', empty: 'Kurum bulunamadı.' },
     en: { website: 'Website', admissions: 'Admissions', tuition: 'Tuition', empty: 'No institutions found.' }
   };
   function L(k){ return (labels[lang()] || labels.tr)[k] || k; }
