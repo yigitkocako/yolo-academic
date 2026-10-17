@@ -22,15 +22,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yoloacademic.com/privacy.html" />
   <meta name="twitter:card" content="summary" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z8W67R6XB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2Z8W67R6XB');
-  </script>
-  <script src="assets/clarity.js"></script>
+  <!-- Tracking is controlled by visitor cookie preferences. -->
+<link rel="stylesheet" href="assets/privacy-consent.css?v=1">
+<script src="assets/privacy-consent.js?v=1" defer></script>
 </head>
 <body class="site">
 <nav class="nav">
@@ -52,14 +46,16 @@
     <ul>
       <li><strong>Google Analytics:</strong> <span class="lang-tr">Trafik, sayfa görüntüleme ve dönüşüm akışını anlamak için kullanılır.</span><span class="lang-en">Used to understand traffic, page views and conversion flow.</span></li>
       <li><strong>Microsoft Clarity:</strong> <span class="lang-tr">Isı haritaları ve oturum kayıtlarıyla site kullanımını iyileştirmek için kullanılır.</span><span class="lang-en">Used to improve website usability with heatmaps and session recordings.</span></li>
+      <li><strong>Meta Pixel:</strong> <span class="lang-tr">İzin verilirse, reklam performansını ve sitedeki dönüşüm hareketlerini ölçmek için kullanılır.</span><span class="lang-en">When permitted, measures advertising performance and conversion actions on the site.</span></li>
       <li><strong>Tawk.to:</strong> <span class="lang-tr">Canlı destek ve hızlı iletişim için kullanılır.</span><span class="lang-en">Used for live support and quick communication.</span></li>
       <li><strong>Calendly:</strong> <span class="lang-tr">Ücretsiz ön görüşme randevularını planlamak için kullanılır.</span><span class="lang-en">Used to schedule free intro consultation meetings.</span></li>
     </ul>
     <h2><span class="lang-tr">Çerezler</span><span class="lang-en">Cookies</span></h2>
     <p><span class="lang-tr">Bu araçlar, site performansını ve kullanıcı deneyimini anlamak için çerez veya benzer teknolojiler kullanabilir. Tarayıcı ayarlarından çerezleri silebilir veya sınırlandırabilirsin.</span><span class="lang-en">These tools may use cookies or similar technologies to understand website performance and user experience. You can delete or limit cookies through your browser settings.</span></p>
+    <h2><span class="lang-tr">Çerez tercihlerin</span><span class="lang-en">Your cookie preferences</span></h2><p><span class="lang-tr">Zorunlu depolama dışında Google Analytics, Microsoft Clarity, Meta Pixel ve Tawk.to önceden onay vermediğin sürece yüklenmez. Analitik, pazarlama ve sohbet izinlerini ayrı ayrı seçebilir, istediğin zaman değiştirebilirsin. Tercih kayıtları yalnızca bu cihazdaki tarayıcıda tutulur. İzinleri geri çekersen takip scriptlerini devre dışı bırakmak için sayfa yeniden yüklenir; daha önce hizmet sağlayıcılara gönderilmiş bilgilerin otomatik olarak silinmesi anlamına gelmez.</span><span class="lang-en">Google Analytics, Microsoft Clarity, Meta Pixel and Tawk.to are not loaded before you consent. You can choose analytics, marketing and chat separately and change them at any time. Choices are saved in this browser. Revoking consent reloads the page to stop previously loaded scripts; it does not automatically erase data previously sent to providers.</span></p><p><button type="button" class="btn" onclick="window.yoloOpenCookiePreferences && window.yoloOpenCookiePreferences()"><span class="lang-tr">Çerez tercihlerini değiştir</span><span class="lang-en">Change cookie preferences</span></button></p>
     <h2><span class="lang-tr">İletişim</span><span class="lang-en">Contact</span></h2>
     <p><span class="lang-tr">Gizlilikle ilgili sorular için bize e-posta gönderebilirsin:</span><span class="lang-en">For privacy-related questions, you can email us:</span> <a href="mailto:yigit@yoloacademic.com">yigit@yoloacademic.com</a></p>
-    <p class="muted small"><span class="lang-tr">Son güncelleme: Ağustos 2026. Bu sayfa hukuki danışmanlık değildir; gerektiğinde profesyonel hukuki destek alınmalıdır.</span><span class="lang-en">Last updated: August 2026. This page is not legal advice; professional legal support should be sought where needed.</span></p>
+    <p class="muted small"><span class="lang-tr">Son güncelleme: Ekim 2026. Bu sayfa hukuki danışmanlık değildir; gerektiğinde profesyonel hukuki destek alınmalıdır.</span><span class="lang-en">Last updated: October 2026. This page is not legal advice; professional legal support should be sought where needed.</span></p>
   </section>
 </main>
 <footer class="site-footer"><div class="container footer-mini"><span>© 2026 YOLO Academic. <span class="lang-tr">Tüm hakları saklıdır.</span><span class="lang-en">All rights reserved.</span></span><a href="privacy.html"><span class="lang-tr">Gizlilik & Çerez Bilgilendirmesi</span><span class="lang-en">Privacy & Cookie Notice</span></a></div></footer>
@@ -67,7 +63,7 @@
 <script src="assets/mobile-nav.js?v=2"></script>
 <script src="assets/config.js"></script>
 <script src="assets/calendly.js"></script>
-<script src="assets/tawk.js"></script>
+<!-- Optional live chat is loaded after visitor consent. -->
 <script src="assets/analytics-events.js?v=1"></script>
 </body>
 </html>
