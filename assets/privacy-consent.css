@@ -1,0 +1,26 @@
+/* YOLO Academic: small, accessible opt-in preferences UI */
+.yolo-cookie-root[hidden]{display:none!important}
+.yolo-cookie-root{position:fixed;bottom:14px;left:14px;z-index:100000;width:min(650px,calc(100% - 28px));font-family:inherit}
+.yolo-consent-card{padding:18px 20px;background:#fff;color:#17233b;border:1px solid #d8dfec;border-radius:16px;box-shadow:0 14px 45px rgba(8,25,62,.25)}
+.yolo-consent-heading{font-size:17px;font-weight:700;line-height:1.3}
+.yolo-consent-card p{font-size:13px;line-height:1.6;color:#4b5563;margin:8px 0 15px}
+.yolo-consent-card a{color:#174bb8;text-decoration:underline}
+.yolo-consent-actions{display:flex;flex-wrap:wrap;gap:8px}
+.yolo-cb{font:inherit;font-size:13px;font-weight:600;padding:10px 12px;border-radius:9px;cursor:pointer;border:1px solid #c6d1e4;background:#fff;color:#17233b}
+.yolo-cb.primary{background:#245dea;border-color:#245dea;color:#fff}
+.yolo-cb:focus-visible,.yolo-cookie-link:focus-visible{outline:3px solid #8bb5ff;outline-offset:2px}
+.yolo-consent-preferences{max-height:82vh;overflow:auto}
+.yolo-consent-option{display:flex;align-items:center;justify-content:space-between;gap:18px;border-top:1px solid #e5e9f2;padding:11px 0;font-size:14px;font-weight:600}
+.yolo-consent-option small{display:block;font-size:12px;font-weight:400;color:#667085;line-height:1.5}
+.yolo-consent-option input{accent-color:#245dea;width:19px;height:19px;flex-shrink:0}
+.yolo-cookie-link{background:transparent;border:0;padding:0;color:#344054;font:inherit;font-weight:600;cursor:pointer;text-decoration:underline}
+.about-story-details{margin:20px 0;padding:16px 18px;border:1px solid #d9e4f5;border-radius:13px;background:#f7faff}
+.about-story-details summary{cursor:pointer;font-weight:700;color:#1b4caa;list-style:revert}
+.about-story-details[open] summary{margin-bottom:15px}
+.about-story-details .prose p{margin:0 0 12px;line-height:1.75}
+.about-story-details .story-note{font-size:12px;color:#667085;margin:0 0 12px}
+html[lang="tr"] .about-story-details .lang-tr{display:block}
+html[lang="tr"] .about-story-details .lang-en{display:none}
+html[lang="en"] .about-story-details .lang-tr{display:none}
+html[lang="en"] .about-story-details .lang-en{display:block}
+@media(max-width:650px){.yolo-cookie-root{left:8px;bottom:8px;width:calc(100% - 16px)}.yolo-consent-card{padding:13px 14px}.yolo-cb{flex:1 1 130px;padding:10px 8px;font-size:12px}}
